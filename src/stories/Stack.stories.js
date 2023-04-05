@@ -15,7 +15,7 @@ export default {
 
 //define a template for creating story
 // you create a template using a component
-//template can accept arguments
+//template can accept arguments which can be passed as props to component
 const Template = ({ numberOfChildren, ...args }) => (
   <Stack {...args}>
     {[...Array(numberOfChildren).keys()].map((n) => (
